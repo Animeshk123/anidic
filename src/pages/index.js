@@ -37,7 +37,7 @@ const Home = () => {
       <div className="w-full h-auto pt-8 mb-12">
         <div className="container mx-auto px-4">
           <div className="max-w-md mx-auto">
-            <input type="text" onKeyDown={(e) => {
+            <input type="text" placeholder="Enter A Valid Word..." onKeyDown={(e) => {
               (e.key == "Enter") ? ((value) ? CallApi(value) : "" ) : ""
             }} onChange={(e) => { setValue(e.target.value) }} value={value} className="py-2 px-4 rounded-lg border-2 border-blue-500 w-full" />
           </div>
